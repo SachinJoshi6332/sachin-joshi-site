@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sachin K. Joshi – Agentic AI Sr. Principal & AI Leader</title>
+<meta name="description" content="Sachin K. Joshi – AI Leader driving enterprise-scale adoption of Agentic AI, delivering $20M+ annual cost savings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1f3a; --navy2:#12305a; --ink:#1c2a3d; --muted:#5b6b82;
+  --teal:#0e8f8f; --teal-d:#0a6f6f; --gold:#c9973a;
+  --bg:#f5f7fa; --card:#ffffff; --line:#e1e7ef;
+  --serif:'Source Serif 4',Georgia,serif; --sans:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--teal-d);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(11,31,58,.97);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:var(--serif);color:#fff;font-weight:600;font-size:1.15rem;letter-spacing:.2px}
+.brand span{color:var(--gold)}
+.menu{display:flex;gap:4px;list-style:none}
+.menu a{display:block;color:#c9d6e8;font-size:.9rem;font-weight:500;padding:8px 13px;border-radius:6px;transition:.15s}
+.menu a:hover,.menu a.active{color:#fff;background:rgba(255,255,255,.1);text-decoration:none}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,#17497d 100%);color:#fff;padding:84px 0 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(14,143,143,.35),transparent 70%)}
+.hero .wrap{display:flex;align-items:center;gap:48px;position:relative;z-index:1}
+.avatar{flex:none;width:150px;height:150px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:3.2rem;font-weight:600;color:var(--gold);border:2px solid var(--gold);background:rgba(255,255,255,.05)}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.15;font-weight:700}
+.hero .role{color:var(--gold);font-weight:600;font-size:1.1rem;margin:10px 0 18px;letter-spacing:.3px}
+.hero p.lead{color:#d4deec;max-width:640px;font-size:1.02rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:11px 22px;border-radius:7px;font-weight:600;font-size:.92rem;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--teal);color:#fff}
+.btn.primary:hover{background:var(--teal-d);text-decoration:none}
+.btn.ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1);text-decoration:none}
+
+/* stats */
+.stats{margin-top:-38px;position:relative;z-index:2}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border-radius:12px;padding:22px 20px;text-align:center;box-shadow:0 6px 22px rgba(11,31,58,.09);border-top:3px solid var(--teal)}
+.stat b{display:block;font-family:var(--serif);font-size:2rem;color:var(--navy);line-height:1.1}
+.stat span{font-size:.84rem;color:var(--muted)}
+
+/* sections */
+section{padding:76px 0 8px}
+.eyebrow{color:var(--teal-d);font-weight:700;font-size:.78rem;letter-spacing:2px;text-transform:uppercase}
+h2{font-family:var(--serif);font-size:2rem;color:var(--navy);margin:6px 0 10px}
+.rule{width:56px;height:3px;background:var(--gold);margin-bottom:30px;border-radius:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px 28px}
+ul.tick{list-style:none}
+ul.tick li{position:relative;padding-left:26px;margin:10px 0}
+ul.tick li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--teal);transform:rotate(45deg)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.about-p{font-size:1.06rem;color:#2c3b52}
+
+/* timeline */
+.tl{position:relative;padding-left:30px;border-left:2px solid var(--line)}
+.job{position:relative;margin-bottom:26px}
+.job::before{content:"";position:absolute;left:-39px;top:26px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--teal)}
+.job h3{font-size:1.12rem;color:var(--navy);font-weight:700}
+.job .org{color:var(--teal-d);font-weight:600;font-size:.95rem}
+.job .when{color:var(--muted);font-size:.85rem;font-weight:500;margin:2px 0 6px}
+.job.minor{padding:16px 22px}
+.job.minor h3{font-size:1rem}
+
+/* projects */
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.proj h3{font-size:1.05rem;color:var(--navy);margin-bottom:6px}
+.proj .impact{display:inline-block;background:#e6f4f4;color:var(--teal-d);font-weight:600;font-size:.8rem;padding:3px 10px;border-radius:20px;margin:4px 0 6px}
+.proj ul{padding-left:18px;color:#34455e;font-size:.95rem}
+.proj li{margin:6px 0}
+
+/* skills */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:#eef3f9;color:var(--navy2);border:1px solid #d9e3f0;padding:5px 12px;border-radius:20px;font-size:.86rem;font-weight:500}
+.skill h3{font-size:.8rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--teal-d);margin:20px 0 4px}
+.skill h3:first-child{margin-top:0}
+
+.award{display:flex;gap:14px;align-items:flex-start;margin:12px 0}
+.award .ic{flex:none;width:36px;height:36px;border-radius:50%;background:#fbf3e2;color:var(--gold);display:grid;place-items:center;font-weight:700}
+
+/* contact */
+.contact{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:14px;padding:42px;margin-bottom:60px}
+.contact h2{color:#fff}
+.contact p{color:#cfdbec}
+.clinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:24px}
+.clinks a,.clinks div{display:block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:14px 18px;color:#fff;font-weight:500;font-size:.95rem;word-break:break-word}
+.clinks a:hover{background:rgba(255,255,255,.16);text-decoration:none}
+.clinks small{display:block;color:var(--gold);font-weight:600;font-size:.72rem;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:2px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 40px}
+
+@media(max-width:860px){
+  .stats .grid{grid-template-columns:repeat(2,1fr)}
+  .two,.pgrid{grid-template-columns:1fr}
+  .hero .wrap{flex-direction:column;text-align:center;gap:26px}
+  .cta{justify-content:center}
+  .burger{display:block}
+  .menu{display:none;position:absolute;top:60px;left:0;right:0;background:var(--navy);flex-direction:column;padding:10px 16px 16px}
+  .menu.open{display:flex}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Sachin K. <span>Joshi</span></a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">AI Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#recognition">Awards &amp; Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="avatar" aria-hidden="true">SJ</div>
+    <div>
+      <h1>Sachin K. Joshi</h1>
+      <div class="role">Agentic AI Sr. Principal &amp; AI Leader</div>
+      <p class="lead">Driving enterprise-scale adoption of Agentic AI with hands-on experience — from ideation to execution, leading large development, application modernization and AI product programs.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="#projects">View AI projects</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat"><b>$20M+</b><span>Annual cost savings delivered</span></div>
+      <div class="stat"><b>90%+</b><span>RAG accuracy achieved</span></div>
+      <div class="stat"><b>5</b><span>GenAI proposals won</span></div>
+      <div class="stat"><b>30%</b><span>SDLC effort reduction</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">About</div>
+    <h2>Profile</h2><div class="rule"></div>
+    <div class="card">
+      <p class="about-p">AI Leader driving enterprise-scale adoption of Agentic AI solutions with hands-on experience. Proven track record of delivering $20M+ in annual cost savings through Agentic AI adoption, multi-agent products and AI-first business strategies. Recognized for technical influence during workshop calls, winning 5 major GenAI proposals by aligning technical and AI strategy guidance. AI speaker to various organizations. Experienced in AI workforce reskilling, Agentic AI framework implementation and ethical AI adoption — helping organizations accelerate Agentic AI transformation while reducing SDLC effort by 30%.</p>
+    </div>
+  </div>
+</section>
+
+<section id="highlights">
+  <div class="wrap">
+    <div class="eyebrow">Highlights</div>
+    <h2>Career highlights</h2><div class="rule"></div>
+    <div class="two">
+      <div class="card">
+        <ul class="tick">
+          <li>Seasoned AI Leader leading large development, application modernization and Agentic AI products.</li>
+          <li>End-to-end execution of a complex GenAI platform — 30% effort saving leading to <b>$20M annual cost saving</b>.</li>
+          <li>AI Strategist for a large Telco merger: <b>30% SDLC &amp; business use-case effort reduction</b> using GenAI low-code/no-code and custom solutions.</li>
+          <li>Owned and ran RAG chatbots, single and multi-agent systems with LLMOps and AI evaluations in production.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="tick">
+          <li>Led and won <b>5 GenAI proposals</b> through thought leadership and technical guidance.</li>
+          <li>Directed 30+ member cross-functional teams on the $10M PwC Polaris product, delivering on-time modernization across 3 geographies.</li>
+          <li>Established an LLM evaluation framework: <b>+20% accuracy, −25% inference cost</b>.</li>
+          <li>AI speaker at large forums and organizations, including the nonprofit TBTLA.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <ul class="tick">
+        <li>Whiteboarding and leading from the front won the PwC AI project; a business-first positioning won the SCE AI project.</li>
+        <li>Leads technical Agentic AI discussions with clients across proposal, project initiation and on-the-ground team stabilization.</li>
+        <li>Guides clients through AI-first strategy workshops: ideas, use cases, roadmaps, AI tools and evaluation frameworks.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow">Experience</div>
+    <h2>Professional experience</h2><div class="rule"></div>
+    <div class="tl">
+
+      <div class="job card">
+        <h3>Sr. Principal – AI &amp; AI Leader</h3>
+        <div class="org">LTM — Skydance, AmexGBT, P&amp;G, CRC</div>
+        <div class="when">Jun 2026 – Present</div>
+        <ul class="tick">
+          <li><b>Skydance:</b> 90+ application modernization through AI agents</li>
+          <li><b>AmexGBT:</b> AIOps platform building and application integration</li>
+          <li><b>P&amp;G:</b> iRun product implementation</li>
+          <li><b>CRC:</b> IT infrastructure automation using Azure SRE Agent and GitHub Actions</li>
+          <li>Delivered Claude Architect training to 55+ LTM resources</li>
+        </ul>
+      </div>
+
+      <div class="job card">
+        <h3>AI Principal &amp; Portfolio Leader</h3>
+        <div class="org">Verizon (through Infosys Ltd.)</div>
+        <div class="when">Nov 2023 – Jun 2026</div>
+        <ul class="tick">
+          <li>Owned technical delivery and implemented <b>VEGAS</b> – Verizon Generative AI Services platform with advanced RAG pipeline as a service, producing <b>$20M annual cost saving</b>.</li>
+          <li>Implemented Agent-as-a-Service using LangGraph for single and multi-agent systems.</li>
+          <li>Designed the LLM evaluation framework with drift analysis and scoring model; implemented LLMOps for business use-case observability.</li>
+          <li>Built RAG chatbots and a GenAI tool for COBOL-to-Java migration; GenAI tooling for C++ and Pro*C documentation and C++-to-Java microservice conversion (30% efficiency).</li>
+          <li>Cut LLM inference cost by 25% for the evaluation model; raised accuracy by 20% using the ROSES prompt engineering framework.</li>
+        </ul>
+      </div>
+
+      <div class="job card">
+        <h3>Principal Consultant &amp; Automation Leader</h3>
+        <div class="org">PwC (through Infosys Ltd.)</div>
+        <div class="when">Apr 2015 – Nov 2023</div>
+        <p style="color:#34455e">Directed 30+ member cross-functional teams on the $10M PwC Polaris product, delivering on-time modernization across 3 geographies.</p>
+      </div>
+
+      <div class="job card minor">
+        <h3>Project Manager &amp; Scrum Master</h3>
+        <div class="org">AON, Weatherford (through Infosys Ltd.)</div>
+        <div class="when">Feb 2011 – Apr 2015</div>
+      </div>
+      <div class="job card minor">
+        <h3>System Analyst (.NET)</h3>
+        <div class="org">IBM, India</div>
+        <div class="when">Apr 2010 – Feb 2011</div>
+      </div>
+      <div class="job card minor">
+        <h3>Tech Lead &amp; Developer (.NET)</h3>
+        <div class="org">TCS — India, Uruguay, UK, Canada</div>
+        <div class="when">Nov 2004 – Mar 2010</div>
+      </div>
+      <div class="job card minor">
+        <h3>Developer (.NET)</h3>
+        <div class="org">ISG Novasoft, AG Technology, ISE – Stock Exchange of India, SSE</div>
+        <div class="when">Aug 2002 – Nov 2004</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <h2>AI projects &amp; product portfolio</h2><div class="rule"></div>
+    <div class="pgrid">
+
+      <div class="card proj">
+        <h3>1. AI Platform Implementation</h3>
+        <p style="font-size:.95rem;color:#34455e">Owned and implemented VEGAS – Verizon Generative AI Services platform with Advanced RAG, agent building, AI evaluation, LLMOps and LLM fine-tuning.</p>
+        <span class="impact">~$20M annual cost saving · Infosys award</span>
+      </div>
+
+      <div class="card proj">
+        <h3>2. Advanced RAG</h3>
+        <ul>
+          <li>Built reusable data preprocessing and RAG pipeline components with business and engineering teams — <b>30% gain</b> in employee efficiency.</li>
+          <li>Developed the “Tech 360 Field Technician Assistant”, reaching <b>90%+ RAG accuracy</b>.</li>
+        </ul>
+      </div>
+
+      <div class="card proj">
+        <h3>3. Agentic AI Solution Development</h3>
+        <ul>
+          <li>Multi-agent solution for Order Fallout Management — <b>~$1M annual saving</b>.</li>
+          <li>Sales Agent with database connectivity automating order workflows — effort cut from 6 months to 3.</li>
+          <li>Ticket Closure automation agent — <b>30K hours saved per month</b>.</li>
+        </ul>
+      </div>
+
+      <div class="card proj">
+        <h3>4. AI Evaluation Framework</h3>
+        <ul>
+          <li>Built a custom LLM evaluation model for RAG performance scoring.</li>
+          <li>Implemented LangSmith and TruLens-based evaluation for agent monitoring.</li>
+          <li>Reduced LLM inference cost by <b>~$1M</b> through optimized evaluation and scoring.</li>
+        </ul>
+      </div>
+
+      <div class="card proj">
+        <h3>5. Agentic AI POCs &amp; Hands-on Work</h3>
+        <ul>
+          <li>AI “Big Brain” for deterministic and probabilistic execution, for cost saving.</li>
+          <li>Proposal Builder — multi-agent system with human in the loop.</li>
+          <li>Ticket analysis skill built with Claude Code.</li>
+          <li>Resume Parser using Agentic RAG.</li>
+          <li>Technical Design Creator using the Reflection pattern in LangGraph.</li>
+          <li>Parallel Processing pattern to identify the latest GenAI trends.</li>
+        </ul>
+        <p style="margin-top:8px"><a href="https://gitlab.com/generative-ai-projects1" target="_blank" rel="noopener">Personal GitLab repository →</a></p>
+      </div>
+
+      <div class="card proj">
+        <h3>6. Low-Code / No-Code &amp; Vibe Coding</h3>
+        <ul>
+          <li>Automated C++ to Java microservice conversion using GitHub Copilot.</li>
+          <li>Agentic RAG workflow for PDF processing built in n8n.</li>
+          <li>Rapid prototypes with Lovable; personal website built with Google Antigravity.</li>
+        </ul>
+        <p style="margin-top:8px"><a href="https://sachinjoshi6332.github.io/SachinSiteAntigravity/" target="_blank" rel="noopener">Earlier vibe-coded site →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">Skills</div>
+    <h2>Expertise</h2><div class="rule"></div>
+    <div class="two">
+      <div class="card skill">
+        <h3>Agentic AI</h3>
+        <div class="chips">
+          <span class="chip">Agentic AI Technical Consulting</span><span class="chip">AI Product &amp; Platform Implementation</span><span class="chip">AI Strategy &amp; CoE Setup</span><span class="chip">Use Case Identification</span><span class="chip">ROI &amp; Feasibility Analysis</span><span class="chip">AI Solution Design</span><span class="chip">AI Tool Comparison</span><span class="chip">Prototyping</span>
+        </div>
+        <h3>AI Product &amp; Portfolio Management</h3>
+        <div class="chips">
+          <span class="chip">AI Product Strategy &amp; Roadmapping</span><span class="chip">Product Lifecycle</span><span class="chip">AI Evaluation</span><span class="chip">PRD &amp; Backlog</span><span class="chip">Agile Delivery</span><span class="chip">Stakeholder Management</span>
+        </div>
+        <h3>Management &amp; Value Creation</h3>
+        <div class="chips">
+          <span class="chip">AI Coaching &amp; Workforce Reskilling</span><span class="chip">AI Forums &amp; Presentations</span><span class="chip">CxO-level AI Brainstorming</span><span class="chip">Stakeholder Reporting</span><span class="chip">GenAI Trend Adoption</span>
+        </div>
+      </div>
+      <div class="card skill">
+        <h3>AI – Pro Code</h3>
+        <div class="chips">
+          <span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">Azure OpenAI</span><span class="chip">Google ADK</span><span class="chip">LLMOps Setup</span><span class="chip">LLM Platform Setup</span><span class="chip">Postgres</span><span class="chip">FAISS</span><span class="chip">Chroma</span>
+        </div>
+        <h3>AI – Low Code / No Code &amp; SDD</h3>
+        <div class="chips">
+          <span class="chip">n8n</span><span class="chip">GitHub Copilot</span><span class="chip">Cursor.AI</span><span class="chip">Google Antigravity</span><span class="chip">Lovable</span><span class="chip">GitHub Spec Kit</span>
+        </div>
+        <h3>Evaluation &amp; LLMOps</h3>
+        <div class="chips">
+          <span class="chip">Custom Evaluation Prompts</span><span class="chip">LangSmith</span><span class="chip">TruLens</span><span class="chip">LLM Observability</span>
+        </div>
+        <h3>Strategy &amp; Governance</h3>
+        <div class="chips">
+          <span class="chip">GenAI Platform Setup</span><span class="chip">Business Value Analysis</span><span class="chip">Governance &amp; CoE</span><span class="chip">Responsible &amp; Ethical AI</span><span class="chip">AI Vision &amp; Roadmap Workshops</span><span class="chip">GenAI Training</span>
+        </div>
+        <h3>AI / ML / RPA</h3>
+        <div class="chips">
+          <span class="chip">Azure AI &amp; Machine Learning</span><span class="chip">Python</span><span class="chip">Time-series Forecasting</span><span class="chip">UiPath</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition">
+  <div class="wrap">
+    <div class="eyebrow">Recognition</div>
+    <h2>Awards &amp; certifications</h2><div class="rule"></div>
+    <div class="two">
+      <div class="card">
+        <h3 style="color:var(--navy);margin-bottom:6px">Awards</h3>
+        <div class="award"><div class="ic">★</div><div>Infosys Champion Award</div></div>
+        <div class="award"><div class="ic">★</div><div>Infosys Glory Award</div></div>
+        <div class="award"><div class="ic">★</div><div>Infosys GenAI Platform Implementation Award</div></div>
+        <div class="award"><div class="ic">★</div><div>Digital Capability Champion</div></div>
+        <div class="award"><div class="ic">★</div><div>Appreciation certificate from PwC</div></div>
+        <div class="award"><div class="ic">★</div><div>Hackathon participation certificate and prize from Infosys</div></div>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--navy);margin-bottom:6px">Certifications &amp; courses</h3>
+        <ul class="tick">
+          <li>Claude Certified Architect</li>
+          <li>Infosys Certified Generative AI Professional</li>
+          <li>Google – Generative AI courses</li>
+          <li>GitHub Copilot – GH-300 exam</li>
+          <li>IBM AI Product Manager</li>
+          <li>IIT Roorkee (E&amp;ICT Academy) – Machine Learning certification programme</li>
+          <li>UiPath – Solution Architect Training</li>
+        </ul>
+        <h3 style="color:var(--navy);margin:20px 0 6px">Education</h3>
+        <ul class="tick"><li>Master of Computer Applications — Nagpur, India</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="eyebrow" style="color:var(--gold)">Contact</div>
+      <h2>Let’s connect</h2>
+      <p>Open to conversations about Agentic AI strategy, platform delivery and AI leadership roles.</p>
+      <div class="clinks">
+        <div><small>Email</small>SachinJoshi6332@gmail.com</div>
+        
+        <div><small>Location</small>Tampa, FL</div>
+        <a href="https://www.linkedin.com/in/sachinkarunakarjoshi/" target="_blank" rel="noopener"><small>LinkedIn</small>sachinkarunakarjoshi</a>
+        <a href="https://gitlab.com/generative-ai-projects1" target="_blank" rel="noopener"><small>GitLab</small>generative-ai-projects1</a>
+        <a href="https://www.youtube.com/channel/UChStUY12uAU7-2U791fif_g" target="_blank" rel="noopener"><small>YouTube</small>Channel</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Sachin K. Joshi</footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.menu a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function spy(){
+    var y=window.scrollY+100,cur=-1;
+    secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur)});
+  }
+  window.addEventListener('scroll',spy,{passive:true});spy();
+  links.forEach(function(a){a.addEventListener('click',function(){document.querySelector('.menu').classList.remove('open')})});
+})();
+</script>
+</body>
+</html>
